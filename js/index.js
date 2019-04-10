@@ -89,3 +89,15 @@ window.addEventListener('load',event => {
     businImg.classList.remove('hidden')
     businImg.classList.add('slideRight')
 })
+
+let contentPick = document.querySelector('.content-pick')
+let destiny = document.querySelector('.destination')
+contentPick.addEventListener('click', function(event){
+    event.stopPropagation()
+    console.log('content pick container clicked')
+})
+
+destiny.addEventListener('click', function(event){
+    // event.stopPropagation()
+    console.log('destiny container clicked')
+})

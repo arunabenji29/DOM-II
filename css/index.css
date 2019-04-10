@@ -368,21 +368,3 @@ img {
   background: #FFFFFF;
   color: #17A2B8;
 }
-.home .hidden {
-  height: 50%;
-  transform: translateX(-80%);
-}
-@keyframes busIn {
-  from {
-    transform: translateX(-80%);
-  }
-  to {
-    transform: translateX(90%);
-  }
-}
-.home .slideRight {
-  animation-name: busIn;
-  animation-duration: 4s;
-  height: 50%;
-  transform: translateX(90%);
-}
