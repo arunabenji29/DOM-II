@@ -21,7 +21,6 @@ headerTwo.forEach(element => element.addEventListener('dblclick', function(event
 
 //keydown over the firstname text
 const firstName = document.querySelector('input.first-name')
-
 firstName.addEventListener('keydown', function(event) {
   console.log('keydown:', event.key)  
 })
@@ -42,11 +41,11 @@ container.addEventListener('resize',function(event){
 
 
 //focus over the blog link
-// let footer1 = document.querySelector('.footer p')
-// footer1.addEventListener('focus', function(event) {
-//     event.target.style.color = 'red'
-//     console.log('focused')
-// })
+let formSubmit = document.querySelector('.form-submit')
+formSubmit.addEventListener('focus', function(event) {
+    event.target.style.color = 'red'
+    console.log('focused')
+})
 
 //load used for the entire window
 window.addEventListener('load', function(event) {
@@ -59,3 +58,5 @@ navBar.addEventListener('click',function(event){
     event.preventDefault()
     console.log('cant load')
 })
+
+//drag items
