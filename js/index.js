@@ -60,3 +60,32 @@ navBar.addEventListener('click',function(event){
 })
 
 //drag items
+let image2 = document.querySelector('.rounded')
+image2.addEventListener('dragend',function(event){
+    event.preventDefault();
+    event.target.style.transform = 'scale(2)'
+    console.log(`dragend: ${event.target}`)
+})
+
+
+//drop items
+let image1 = document.querySelector('.round')
+document.addEventListener('drop',function(event){
+    event.preventDefault();
+    console.log(`drop: ${event.target}`)
+})
+
+
+
+//scroll
+// let contentDestination = document.querySelector('.content-destination')
+window.addEventListener('scroll', function(event) {
+    // event.target.style.color = 'red'
+    console.log(`content destination ${event.target}`)
+})
+
+const businImg = document.querySelector('.hidden')
+window.addEventListener('load',event => {
+    businImg.classList.remove('hidden')
+    businImg.classList.add('slideRight')
+})

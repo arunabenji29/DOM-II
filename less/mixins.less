@@ -30,3 +30,18 @@
     color: @button-bg;
   }
 }
+
+.hidden{
+  height:50%;
+  transform: translateX(-80%);
+}
+@keyframes busIn {
+  from{ transform: translateX(-80%);}
+  to { transform: translateX(90%);}
+}
+.slideRight{
+  animation-name: busIn;
+  animation-duration: 4s;
+  height:50%;
+  transform: translateX(90%);
+}
