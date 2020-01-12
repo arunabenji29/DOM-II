@@ -1,5 +1,7 @@
 .home {
 
+  
+
   .intro {
     padding: 90px 0 10px;
     border-bottom: 2px dashed @navigation-border;
@@ -51,6 +53,23 @@
     }
   }
 
+  .hold{
+    border:solid red 4px;
+  }
+
+  .invisible{
+    // display: block;
+    display: none;
+  }
+  
+
+  .hovered{
+    background:green;
+    border-style: dashed;
+  }
+
+  
+
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
@@ -64,7 +83,7 @@
       }
     }
 
-    .img-content {
+    .img-content1 {
       padding-right: 1%;
       padding-left: 0;
 
@@ -86,6 +105,35 @@
       border-radius: 10px;
     }
   }
+
+  .last-section{
+    display: flex;
+    width:90%;
+    min-height:120px;
+
+  .last-section1{
+    background-image: url('../img/destination.jpg');
+    width:200px;
+    height:200px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .last-section2{
+    background-image: url('../img/adventure.jpg');
+    width:200px;
+    height:200px;
+    position: relative;
+    cursor: pointer;
+  }
+}
+
+.empty{
+  display:flex;
+  width:200px;
+  height:200px;
+  border:1px solid red;
+}
 
   .content-pick {
     padding-top: 30px;

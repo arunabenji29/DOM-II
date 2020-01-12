@@ -289,6 +289,16 @@ img {
     width: 100%;
   }
 }
+.home .hold {
+  border: solid red 4px;
+}
+.home .invisible {
+  display: none;
+}
+.home .hovered {
+  background: green;
+  border-style: dashed;
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
@@ -302,12 +312,12 @@ img {
     order: 1;
   }
 }
-.home .inverse-content .img-content {
+.home .inverse-content .img-content1 {
   padding-right: 1%;
   padding-left: 0;
 }
 @media (max-width: 500px) {
-  .home .inverse-content .img-content {
+  .home .inverse-content .img-content1 {
     order: 2;
   }
 }
@@ -322,6 +332,31 @@ img {
 }
 .home .content-destination img {
   border-radius: 10px;
+}
+.home .last-section {
+  display: flex;
+  width: 90%;
+  min-height: 120px;
+}
+.home .last-section .last-section1 {
+  background-image: url('../img/destination.jpg');
+  width: 200px;
+  height: 200px;
+  position: relative;
+  cursor: pointer;
+}
+.home .last-section .last-section2 {
+  background-image: url('../img/adventure.jpg');
+  width: 200px;
+  height: 200px;
+  position: relative;
+  cursor: pointer;
+}
+.home .empty {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
 }
 .home .content-pick {
   padding-top: 30px;
